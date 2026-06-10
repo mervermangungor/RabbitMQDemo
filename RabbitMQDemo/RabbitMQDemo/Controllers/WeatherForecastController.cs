@@ -19,14 +19,14 @@ namespace RabbitMQDemo.Controllers
         }
 
         /// <summary>
-        /// Belirlenen tarih aralığı için örnek hava durumu tahmin verilerini getirir.
+        /// Sonraki 5 gÃ¼n iÃ§in Ã¶rnek hava durumu tahmin verilerini getirir.
         /// </summary>
         /// <remarks>
-        /// Bu endpoint demo amaçlı rastgele hava durumu verileri üretmektedir.
-        /// Gerçek meteorolojik veriler kullanılmamaktadır.
+        /// Bu endpoint demo amaÃ§lÃ½ rastgele hava durumu verileri Ã¼retmektedir.
+        /// GerÃ§ek meteorolojik veriler kullanÃ½lmamaktadÃ½r.
         /// </remarks>
-        /// <returns>Hava durumu tahmin bilgilerini içeren liste.</returns>
-        /// <response code="200">Hava durumu tahminleri başarıyla getirildi.</response>
+        /// <returns>Hava durumu tahmin bilgilerini iÃ§eren liste.</returns>
+        /// <response code="200">Hava durumu tahminleri baÃ¾arÃ½yla getirildi.</response>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
