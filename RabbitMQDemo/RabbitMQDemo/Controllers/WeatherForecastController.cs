@@ -18,6 +18,15 @@ namespace RabbitMQDemo.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Sonraki 5 gün için örnek hava durumu tahmin verilerini getirir.
+        /// </summary>
+        /// <remarks>
+        /// Bu endpoint demo amaçlý rastgele hava durumu verileri üretmektedir.
+        /// Gerçek meteorolojik veriler kullanýlmamaktadýr.
+        /// </remarks>
+        /// <returns>Hava durumu tahmin bilgilerini içeren liste.</returns>
+        /// <response code="200">Hava durumu tahminleri baþarýyla getirildi.</response>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
